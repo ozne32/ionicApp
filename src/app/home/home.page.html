@@ -1,20 +1,197 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Primeiro App do senhor Enzo
     </ion-title>
   </ion-toolbar>
 </ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+<ion-content padding>
+  
+  <!-- aprendendo sobre botões, full, block, round,sill -->
+  <!-- <h4>Expandidos</h4>
+  <ion-button expand="full">Clique aqui</ion-button>
+  <ion-button expand="block">Clique aqui</ion-button>
+  <h4>Arredondado</h4>
+  <ion-button shape="round">Clique aqui</ion-button>
+  <h4>Preenchimento</h4>
+  <ion-button fill="outline">Clique aqui</ion-button>
+  <h4>ícones</h4>
+  <ion-button>
+    <ion-icon slot="start" name="star"></ion-icon> favoritar
+  </ion-button>
+  <ion-button>
+    <ion-icon slot='end' name="star"></ion-icon> favoritar
+  </ion-button>
+  <h4>Tamanho</h4>
+  <ion-button size="small">clique aqui</ion-button>
+  <ion-button >clique aqui</ion-button>
+  <ion-button size="large">clique aqui</ion-button> -->
+  <!-- cartões -->
+  <!-- <h1>Aprendendo sobre cartões</h1>
+  <ion-row>
+    <ion-col>
+      <ion-card>
+        <img src="uma-pintura-de-um-lago-de-montanha-com-uma-montanha-ao-fundo.jpg">
+        <ion-card-content>
+          <ion-card-title>Cartão super show</ion-card-title>
+          <ion-card-subtitle>Cartão super show</ion-card-subtitle>
+          <p>agora vamos falar um pouco mais sobre ... texto aleatório
+            texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório
+            texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório
+            texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório texto
+            aleatório
+            texto aleatório texto aleatório texto aleatório texto aleatório texto aleatório
+          </p>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+    <ion-col>
+      <ion-card>
+        <ion-card-content>
+          <ion-card-title> Cartão com listagem de itens</ion-card-title>
+          <ion-card-subtitle> subtitulo</ion-card-subtitle>
+          <ion-item>
+            <ion-icon name="add"></ion-icon>
+            <ion-label>
+              coisa1
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="star" slot="start"></ion-icon>
+            <ion-label>coisa2</ion-label>
+          </ion-item>
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+  <h1>Aprendendo sobre listas</h1>
+  <ion-row>
+    <ion-col>
+      <h4>listas</h4>
+      <ion-item>
+        <ion-icon name="add"></ion-icon>
+        <ion-label>1.coisa 1</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="star"></ion-icon>
+        <ion-label>2.coisa 2</ion-label>
+      </ion-item>
+    </ion-col>
+    <ion-col>
+      <h4>listas com avatar</h4>
+      <ion-item>
+        <ion-avatar><ion-img src="https://docs-demo.ionic.io/assets/madison.jpg"
+            alt="The Wisconsin State Capitol building in Madison, WI at night"></ion-img></ion-avatar>
+        <ion-label>1.coisa 1</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-avatar><ion-img src="https://docs-demo.ionic.io/assets/madison.jpg"
+            alt="The Wisconsin State Capitol building in Madison, WI at night"></ion-img></ion-avatar>
+        <ion-label>2.coisa 2</ion-label>
+      </ion-item>
+    </ion-col>
+    <ion-col>
+      <h4>Lista com slide</h4>
+      <ion-list>
+        <ion-item-sliding>
+          <ion-item>
+            <ion-label>
+              coisa1
+            </ion-label>
+               <!-- o side define para qual lado você vai ter que puxar para aparecer os outros itens
+             e por padrão o end está definido 
+            <ion-item-options side="start">
+              <!-- ao invés de colocar em uma classe que nem faz com bootstrap é um novo atributo, chamado de 
+               color 
+              <ion-item-option color="success">
+                <ion-icon name="create-outline" color="light"></ion-icon>
+                Alterar
+              </ion-item-option>
+              <ion-item-option color="danger">
+                <ion-icon name="trash"></ion-icon>
+                Deletar
+              </ion-item-option>
+            </ion-item-options>
+          </ion-item>
+        </ion-item-sliding>
+      </ion-list>
+    </ion-col>
+  </ion-row> -->
+  <!-- <h4>Configurando entrada de dados (float, fixed, stacked)</h4>
+  <ion-item>
+    <!-- isso aqui faz com que quando você clicar para colocar o nome a parte que estiver no label
+     vai subir para cima, fixed->fica em cima e stacked->fica em cima 
+    <ion-label position="floating">Nome:</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <!-- unico dessas coisas que eu não tinha visto ainda era o clearprint, que é um botão em formato de X
+   que fica a direita do campo para preenher os dados que apaga de uma vez tudo que está no input 
+  <h4>entradada de dados(placeholder, value, clearprint)</h4>
+  <ion-item>
+    <ion-label position="floating"></ion-label>
+    <ion-input clearInput placeholder="Digite o seu nome"></ion-input>
+  </ion-item> 
+  <!-- não acho necessário ter que fazer todo o código para reexplicar oq são os types, mas é importante
+   destacar que o teclado no caso do celular fica todo diferente e bonitão -->
+  <!-- o cara está explicando dnv como funciona o sistema de grids, eu já tinha usado em cartões e em listas
+  porém é legal falar que o ionic pede também para que você coloque primeiro um ion-grid -->
+  <!-- dentro de ion-col você define um size que fala quantas coisinhas(1,12) de tamanho vai ter -->
+   <!--
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6">col1</ion-col>
+      <ion-col size="3">col2</ion-col>
+      <ion-col size="3">col3</ion-col>
+    </ion-row>
+    <br>
+    <ion-row>
+      <ion-col size="2">col1</ion-col>
+      <ion-col size="2">col2</ion-col>
+      <ion-col size="2">col3</ion-col>
+      <ion-col size="2">col4</ion-col>
+      <ion-col size="2">col5</ion-col>
+      <ion-col size="2">col6</ion-col>
+    </ion-row>
+    <!-- offset 
+     <ion-row>
+        <ion-col size="3">col1</ion-col>
+        <ion-col offset="3" size="6">col2</ion-col>
+     </ion-row>
+     <!-- alinhamento classes(ion-text-start->normal, ion-text-end->ao contrário, ion-text-center->textos centralizados
+      você também pode colocar dentro das col para ter o resultado que deseja  -->
+     <!-- alinhamento vertical = troca text por align-itens, e continua com as mesmas outras coisas  
+      oq ele faz é que qundo você tem um elemento que se extende um pouco mais no eixo y ele vai alinhando conforme
+      você fala para ele fazer, como alinhar para cima, para baixo, ou até centralizar 
+    </ion-grid> -->
+    <!--
+    <h1>{{titulo}}</h1>
+    <h4>String interpolation</h4>
+    {{saudacao}}
+    <h4>Property binding</h4>
+    <ion-img [src]="imgLocal" style="width:300px"></ion-img>
+    <h4>Event Biding</h4>
+    <ion-item>
+      <ion-label ></ion-label>
+      <ion-input (click)="clicou()" placeholder="digite seu nome"></ion-input>
+    </ion-item>
+    <ion-button (click)="clicouBotao()">Clica</ion-button>-->
+    <!-- não precisa ser feito chamando uma função, pode ser definido apenas colocando um href -->
+    <h1>Navegação</h1>
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button (click)="botao()" expand="full">Vá para botões</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button (click)="listas()" expand="full">Vá para listas</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button (click)="input()" expand="full">Vá para os inputs</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 </ion-content>

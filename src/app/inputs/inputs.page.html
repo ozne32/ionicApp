@@ -1,0 +1,19 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>inputs</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">inputs</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-item>
+    <ion-label position="floating"> coloque o input</ion-label>
+    <ion-input [(ngModel)]="input"></ion-input>
+  </ion-item>
+  <ion-button (click)="mostrarInput()">Mostrar o input abaixo</ion-button>
+  {{resultado}}
+</ion-content>

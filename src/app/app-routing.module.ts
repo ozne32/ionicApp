@@ -11,6 +11,18 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'botao',
+    loadChildren: () => import('./botao/botao.module').then( m => m.BotaoPageModule)
+  },
+  {
+    path: 'listas',
+    loadChildren: () => import('./listas/listas.module').then( m => m.ListasPageModule)
+  },
+  {
+    path: 'inputs',
+    loadChildren: () => import('./inputs/inputs.module').then( m => m.InputsPageModule)
+  },
 ];
 
 @NgModule({
